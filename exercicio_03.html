@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +7,20 @@
     <title>Exercicio 03</title>
 </head>
 <body>
-    <div id="resul"></div> 
+    <h1>somas parciais</h1>
+    <span>3 (soma parcial do numero 1 com o numero 2)</span></br>
+    <span id="resul"></span> 
     <script>
-        let conta = "";
-       
-        for (let i = 1; i <= 10; i++) {
-        
-           conta += i + "</br>";
+
+        let conta = 3;
+        let numero = "";
+        for (let i = 3; i <= 10; i+= 1) {
+
+            conta += i ;
+            numero += conta + "(soma parcial do numero " + i + ")" + "</br>" ;
+
+            document.getElementById("resul").innerHTML =  numero 
         }
-
-        
-        document.getElementById("resul").innerHTML =  conta
-
     </script>
 </body>
 </html>
